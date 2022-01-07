@@ -1,12 +1,32 @@
 @import '~antd/dist/antd.css';
 
+.landing,
+.connect-wallet,
+.mint-nft,
+.member-page {
+  flex-direction: column;
+  width: 960px;
+  max-width: calc(100% - 1rem);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin: auto;
+  align-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.welcome{
+    color: white;
+}
+
+
 html,
 body {
   margin: 0;
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  background-image: url("./background.jpg");
   color: #fff;
   overflow-x: hidden;
 }
@@ -42,21 +62,6 @@ h1 {
   padding: 1rem;
   border-radius: 1rem;
   background-color: #f00;
-}
-
-.landing,
-.connect-wallet,
-.mint-nft,
-.member-page {
-  flex-direction: column;
-  width: 960px;
-  max-width: calc(100% - 1rem);
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  margin: auto;
-  align-content: center;
-  display: flex;
-  text-align: center;
 }
 
 .member-page > div {
@@ -140,4 +145,8 @@ button:focus {
 button:disabled {
   opacity: 0.8;
   pointer-events: none;
+}
+
+.active-proposal {
+    color: white;
 }
